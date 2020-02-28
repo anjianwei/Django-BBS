@@ -18,13 +18,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '%hwgnm*0+i$!c#=)ox^xc)r9xbe6=d8j!@-w6b@08o(2_#q^^5'
-
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -80,12 +76,12 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
@@ -136,8 +132,6 @@ MEDIA_ROOT = 'media'  # 项目下的目录
 MEDIA_URL = "/media/"  # 跟STATIC_URL类似，指定用户可以通过这个url找到文件
 
 from decouple import config
-
-SECRET_KEY = config('SECRET_KEY')
 from decouple import config, Csv
 import dj_database_url
 
