@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27579be0-9c52-42ce-b984-5517e010b04c" name="Default Changelist" comment="" />
+    <list default="true" id="27579be0-9c52-42ce-b984-5517e010b04c" name="Default Changelist" comment="delete test">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ce90af4f-25d2-420b-baed-2ee6e22c216a.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/myproject.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,6 +79,7 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1Vby2TfDvifAUjjnaolQYjWie1W" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -78,6 +88,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/avatar" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -200,11 +211,24 @@
       <workItem from="1582822776181" duration="5259000" />
       <workItem from="1582828095426" duration="79000" />
       <workItem from="1582862378239" duration="10317000" />
+      <workItem from="1582879383200" duration="224000" />
     </task>
+    <task id="LOCAL-00001" summary="delete test">
+      <created>1582879470582</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582879470582</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="delete test" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete test" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="57" key="#Notifications" timestamp="1580540263341">
@@ -223,6 +247,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="516" y="282" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1536.824@0.0.1536.824" timestamp="1582447173075" />
+    <state x="406" y="3" key="CommitChangelistDialog2" timestamp="1582879584531">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="406" y="3" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582879584531" />
     <state x="503" y="179" key="EnvironmentVariablesDialog" timestamp="1580402355943">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
