@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}My account{% endblock %}
+
+{% block breadcrumb %}
+    <li class="breadcrumb-item active">My account</li>
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-lg-6 col-md-8 col-sm-10 d-flex">
+
+            <div class="col-10 mr-auto">
+                <form method="post" novalidate>
+                    {% csrf_token %}
+                    {% include 'includes/form.html' %}
+                    <button type="submit" class="btn btn-success">保存修改</button>
+                </form>
+            </div>
+            <div class="col-4 d-flex">
+                <div class="mr-auto">头像:
+                    <img src="{{ MEDIA_URL }}{{ user.User_Profiles.first.avatar }}" alt="{{ user.username }}" class="w-100 rounded">
+                    <div class="user-head">
+                        <form role="form" enctype="multipart/form-data" action="{% url 'upload_avatar' %}"
+                              method="POST">
+                            {% csrf_token %}
+                            <div>
+                                {% for img in imgs %}
+                                    <img src="{{ user.User_Profiles.first.avatar }}" alt="">
+                                {% endfor %}
+                            </div>
+                            <div>
+                                <input class="btn-success" type="file" accept="image/*" name="img">
+                                <button class="btn btn-success" type="submit">变成头像</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
