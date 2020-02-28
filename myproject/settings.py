@@ -135,4 +135,17 @@ LOGIN_URL = 'login'
 MEDIA_ROOT = 'media'  # 项目下的目录
 MEDIA_URL = "/media/"  # 跟STATIC_URL类似，指定用户可以通过这个url找到文件
 
+from decouple import config
 
+SECRET_KEY = config('SECRET_KEY')
+from decouple import config, Csv
+import dj_database_url
+
+SECRET_KEY = config('SECRET_KEY')
+DEBUG = config('DEBUG', default=False, cast=bool)
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
+DATABASES = {
+    'default': dj_database_url.config(
+        default=config('DATABASE_URL')
+    )
+}
