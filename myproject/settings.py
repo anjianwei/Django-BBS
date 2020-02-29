@@ -152,7 +152,7 @@ env = environ.Env(
 )
 # reading .env file
 environ.Env.read_env()
-
+ALLOWED_HOSTS = env('ALLOWED_HOSTS')
 # False if not in os.environ
 DEBUG = env('DEBUG')
 
