@@ -73,4 +73,4 @@ urlpatterns = [
     # 个人信息
     url(r'^settings/account/$', accounts_views.UserUpdateView.as_view(), name='my_account'),
 
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
