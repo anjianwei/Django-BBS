@@ -133,9 +133,9 @@ LOGIN_URL = 'login'
 MEDIA_ROOT = 'media'  # 项目下的目录
 MEDIA_URL = "/media/"  # 跟STATIC_URL类似，指定用户可以通过这个url找到文件
 
-# from decouple import config, Csv
-# import dj_database_url
-#
+from decouple import config, Csv
+import dj_database_url
+
 # SECRET_KEY = config('SECRET_KEY')
 # DEBUG = config('DEBUG', default=False, cast=bool)
 # ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
@@ -144,7 +144,6 @@ MEDIA_URL = "/media/"  # 跟STATIC_URL类似，指定用户可以通过这个url
 #         default=config('DATABASE_URL')
 #     )
 # }
-
 
 env = environ.Env(
 
