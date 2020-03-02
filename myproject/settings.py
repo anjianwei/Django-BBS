@@ -146,14 +146,13 @@ MEDIA_URL = "/media/"  # 跟STATIC_URL类似，指定用户可以通过这个url
 # }
 
 
-
 env = environ.Env(
 
     DEBUG=(bool, False)
 )
 
-environ.Env.read_env()
-ALLOWED_HOSTS = ['*']
+environ.Env.read_env('.env')  # 必须写文件名
+ALLOWED_HOSTS = ['*', ]  # 必须加,
 
 DEBUG = env('DEBUG')
 SECRET_KEY = env('SECRET_KEY')
